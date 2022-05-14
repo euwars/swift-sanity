@@ -132,7 +132,7 @@ public extension SanityClient.Query where T: Decodable {
     ///     self.queryString = response.query
     /// })
     /// ```
-    func fetch() -> AnyPublisher<DataResponse<T>, Error> {
+    func fetchMapped() -> AnyPublisher<DataResponse<T>, Error> {
         let urlRequest = apiURL.fetch(query: query, params: params, config: config).urlRequest
 
         return urlSession.dataTaskPublisher(for: urlRequest).tryMap { data, response -> JSONDecoder.Input in
