@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "EventSource",
-        "repositoryURL": "https://github.com/inaka/EventSource.git",
+        "repositoryURL": "https://github.com/euwars/EventSource",
         "state": {
           "branch": null,
-          "revision": "78934b361891c7d0fa3d399d128e959f0c94d267",
+          "revision": "b5c8ab7692fbc1b7b45f9bb0eff81d2c5b5e50bb",
           "version": null
         }
       }
