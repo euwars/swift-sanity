@@ -271,7 +271,7 @@ public extension SanityClient.Query {
     ///     }
     /// }
     /// ```
-    func fetch(completion: @escaping ResultDataCallback) {
+    func fetchAll(completion: @escaping ResultDataCallback) {
         let urlRequest = apiURL.fetch(query: query, params: params, config: config).urlRequest
 
         let task = urlSession.dataTask(with: urlRequest) { data, response, _ in
